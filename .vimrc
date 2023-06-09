@@ -17,6 +17,7 @@ set tabstop=4
 set shiftwidth=4
 set expandtab
 set ruler
+nnoremap <F3> :nohlsearch<CR>
 
 " STATUS LINE ------------------------------------------------------------ {{{
 
