@@ -23,6 +23,7 @@
 *.color15: #d4be98
 
 ! Urxvt Settings
+URxvt.perl-ext-common: default,resize-font
 URxvt.scrollBar: false
 URxvt.scrollBar_right: false
 ! URxvt*depth: 32
@@ -34,4 +35,9 @@ URxvt.saveLines: 0
 URxvt.keysym.Control-Mod-v: eval:paste_escaped
 ! paste_clipboard ; paste_escaped ; paste
 urxvt.keysym.Control-Mod-c: eval:selection_to_clipboard
-URxvt.perl-ext-common: default
+
+! Keybinds
+URxvt.keysym.C-Up: \033[1;5A
+URxvt.keysym.C-Down: \033[1;5B
+URxvt.keysym.C-Right: \033[1;5C
+URxvt.keysym.C-Left: \033[1;5D
