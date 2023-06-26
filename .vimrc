@@ -3,6 +3,7 @@ filetype on
 filetype plugin on
 filetype indent on
 " set cursorline
+set mouse=a
 set showmode
 set showmatch
 set history=2

@@ -41,3 +41,4 @@ URxvt.keysym.C-Up: \033[1;5A
 URxvt.keysym.C-Down: \033[1;5B
 URxvt.keysym.C-Right: \033[1;5C
 URxvt.keysym.C-Left: \033[1;5D
+
