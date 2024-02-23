@@ -1,0 +1,170 @@
+* {
+  all: unset;
+  font-family: "SF Mono", monospace;
+  font-size: 1.05rem;
+}
+
+#waybar {
+  background-color: transparent;
+}
+
+tooltip {
+  background-color: #121212;
+  padding: 1rem;
+  border-radius: 1.5rem;
+}
+
+#workspaces,
+#tray,
+#tray menu,
+#battery,
+#backlight,
+#clock {
+  background-color: #121212;
+  margin: 0.35rem 0.5rem 0 0.35rem;
+  border-radius: 2rem;
+}
+
+.modules-left {
+  margin-top: 0.5rem;
+}
+
+.modules-right {
+  margin-bottom: 0.5rem;
+}
+
+#workspaces {
+  padding: 0.2rem 0;
+}
+
+#workspaces button {
+  padding: 0.9rem 1.4rem;
+  border-radius: 1.5rem;
+  color: #ffffff;
+  transition-duration: 0.2s;
+  margin: 0.1rem 0.25rem;
+}
+
+#workspaces button:hover {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+#workspaces button.active {
+  background-image: linear-gradient(90deg, #ccaaff, #aaccff);
+  color: #000000;
+}
+
+#workspaces button.empty {
+  color: #404040;
+}
+
+#tray {
+  padding: 1rem 0.15rem;
+}
+
+#battery {
+  padding: 1rem 0.15rem;
+}
+
+#clock {
+  font-weight: bold;
+  padding: 2rem 0;
+}
+
+#clock,
+#battery,
+#cpu,
+#memory,
+#disk,
+#temperature,
+#backlight,
+#network,
+#pulseaudio,
+#wireplumber,
+#custom-media,
+#tray,
+#mode,
+#idle_inhibitor,
+#scratchpad,
+#mpd {
+  background-color: #121212;
+  margin: 0.35rem 0.5rem 0 0.35rem;
+  border-radius: 2rem;
+}
+
+#window,
+#workspaces {
+    margin: 0 4px;
+}
+
+@keyframes blink {
+    to {
+        background-color: #ffffff;
+        color: #000000;
+    }
+}
+
+#battery.critical:not(.charging) {
+    color: red;
+    animation-name: blink;
+    animation-duration: 0.5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+#network.disconnected {
+    background-color: #f53c3c;
+}
+
+#wireplumber {
+    background-color: #fff0f5;
+    color: #000000;
+}
+
+#temperature.critical {
+    background-color: #eb4d4b;
+}
+
+#tray > .passive {
+    -gtk-icon-effect: dim;
+}
+
+#tray > .needs-attention {
+    -gtk-icon-effect: highlight;
+    background-color: #eb4d4b;
+}
+
+#mpd {
+    background-color: #66cc99;
+    color: #2a5c45;
+}
+
+#mpd.disconnected {
+    background-color: #f53c3c;
+}
+
+#mpd.stopped {
+    background-color: #90b1b1;
+}
+
+#mpd.paused {
+    background-color: #51a37a;
+}
+
+#keyboard-state > label {
+    padding: 0 5px;
+}
+
+#keyboard-state > label.locked {
+    background: rgba(0, 0, 0, 0.2);
+}
+
+#scratchpad {
+    background: rgba(0, 0, 0, 0.2);
+}
+
+#scratchpad.empty {
+	background-color: transparent;
+}
